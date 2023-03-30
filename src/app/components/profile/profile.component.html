@@ -1,0 +1,151 @@
+<div class="profile">
+
+  <!-- banner -->
+  <app-profile-banner [bannerImage]="bannerImage"></app-profile-banner>
+
+  <!-- navigation -->
+  <div class="pr-nav bottom-shadow">
+    <div class="pr-nav-inside p-relative d-flex pt-15 pb-15 flex-wrap">
+      <div class="pr-avatar avatar-xl bg-image"
+        [style.background-image]="'url(https://angular-material.fusetheme.com/assets/images/avatars/male-04.jpg)'">
+      </div>
+
+      <div class="pr-name pr-25">
+        <p class="bold m-0">Brian Hughes</p>
+        <p class="m-0 text-light">London, UK</p>
+      </div>
+
+      <div class="pr-follow d-flex">
+        <div class="pl-25 pr-10 align-c">
+          <p class="bold m-0">200k</p>
+          <p class="m-0 text-light">FOLLOWERS</p>
+        </div>
+        <div class="pl-10 pr-25 align-c">
+          <p class="bold m-0">1.2k</p>
+          <p class="m-0 text-light">FOLLOWING</p>
+        </div>
+      </div>
+
+      <div class="pr-links d-flex">
+        <div class="pl-25 pr-10 align-c">
+          <p class="mt-10 mb-0 pointer">Home</p>
+        </div>
+        <div class="pl-10 pr-10 align-c">
+          <p class="text-light pointer mt-10 mb-0">About</p>
+        </div>
+        <div class="pl-10 pr-25 align-c">
+          <p class="text-light pointer mt-10 mb-0">Followers</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="br-container-light pr-content d-flex flex-wrap">
+    <!-- left -->
+    <div class="pr-content-left">
+
+      <!-- about me -->
+      <div class="br-panel">
+        <p class="title">About me </p>
+        <p>I’m a friendly kitchen assistant who suffers from a severe phobia of buttons.</p>
+        <p>Brother of Elijah Jay Watkins, who has phobia of buttons and trust issues.</p>
+        <hr>
+        <p><mat-icon>location_on</mat-icon> London, UK</p>
+        <p><mat-icon>business_center</mat-icon> ACME Corp. Lead UX Designer</p>
+        <p><mat-icon>cake</mat-icon> April 23</p>
+
+        <button mat-raised-button color="primary" class="mt-15 w-100">See complete bio</button>
+      </div>
+
+      <!-- groups -->
+      <div class="br-panel">
+        <p class="title mb-30">Groups <mat-icon [matMenuTriggerFor]="menu" class="pointer float-r p-relative l-10">more_vert</mat-icon></p>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Search for groups</button>
+        </mat-menu>
+
+        <div class="groups-list">
+          <div class="d-flex mt-10 mb-10">
+            <div class="group-img bg-image mr-15" [style.background-image]="'url(https://angular-material.fusetheme.com/assets/images/pages/profile/cover.jpg)'">
+            </div>
+            <div>
+              <p class="m-0 lh-15 fw-bold truncate">The Port Cafe</p>
+              <p class="m-0 fs-13">Best cafe of the downtown</p>
+              <p class="text-light m-0 fs-13">1.2k followers</p>
+            </div>
+          </div>
+
+          <div class="d-flex mt-10 mb-10">
+            <div class="group-img bg-image mr-15" [style.background-image]="'url(https://angular-material.fusetheme.com/assets/images/cards/coffee-shop-02-512x512.jpg)'">
+            </div>
+            <div>
+              <p class="m-0 lh-15 fw-bold truncate">Design House LLC.</p>
+              <p class="m-0 fs-13">UI/UX, brand and product</p>
+              <p class="text-light m-0 fs-13">957 followers</p>
+            </div>
+          </div>
+
+          <div class="d-flex mt-10 mb-10">
+            <div class="group-img bg-image mr-15" [style.background-image]="'url(https://angular-material.fusetheme.com/assets/images/cards/coffee-shop-03-320x320.jpg)'">
+            </div>
+            <div>
+              <p class="m-0 lh-15 fw-bold truncate">Crax Laser Tag</p>
+              <p class="m-0 fs-13">30% off with group of 6 </p>
+              <p class="text-light m-0 fs-13">342 followers</p>
+            </div>
+          </div>
+
+          <div class="d-flex mt-10 mb-10">
+            <div class="group-img bg-image mr-15" [style.background-image]="'url(https://angular-material.fusetheme.com/assets/images/cards/sneakers-01-320x200.jpg)'">
+            </div>
+            <div>
+              <p class="m-0 lh-15 fw-bold truncate">Roadster Clothing Inc.</p>
+              <p class="m-0 fs-13">$25 off on orders $500 </p>
+              <p class="text-light m-0 fs-13">4.7k followers</p>
+            </div>
+          </div>
+        </div>
+
+        <button mat-button color="primary" class="mt-15">See all groups</button>
+      </div>
+    </div>
+
+    <!-- right -->
+    <div class="pr-content-right">
+      <!-- create post -->
+      <div class="br-panel">
+        <p class="title">Create Post</p>
+
+        <div class="d-flex mt-40">
+          <div class="avatar-md bg-image mr-20" [style.background-image]="'url(https://angular-material.fusetheme.com/assets/images/avatars/male-04.jpg)'"></div>
+
+          <textarea class="w-100 no-resize" rows="4" placeholder="What's on your mind?"></textarea>
+        </div>
+
+        <div class="d-flex mt-40">
+          <button mat-raised-button>
+            <p><mat-icon>image</mat-icon> Photo/Video</p>
+          </button>
+
+          <button mat-raised-button>
+            <p><mat-icon>account_circle</mat-icon> Tag Friends</p>
+          </button>
+
+          <button mat-raised-button>
+            <p><mat-icon>mood</mat-icon> Feeling</p>
+          </button>
+
+          <button mat-raised-button>
+            <p><mat-icon [matMenuTriggerFor]="menu1">more_horiz</mat-icon></p>
+            <mat-menu #menu1="matMenu">
+              <button mat-menu-item><p><mat-icon>play_circle</mat-icon>Live</p></button>
+              <button mat-menu-item><p><mat-icon>auto_awesome</mat-icon>Check in</p></button>
+            </mat-menu>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

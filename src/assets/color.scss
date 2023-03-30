@@ -1,0 +1,142 @@
+$md-custom-primary: (
+    50: #eae9fc,
+    100: #cbc9f7,
+    200: #a8a5f2,
+    300: #8581ed,
+    400: #6b66e9,
+    500: #514be5,
+    600: #4a44e2,
+    700: #403bde,
+    800: #3733da,
+    900: #2723d3,
+    A100: #ffffff,
+    A200: #dbdaff,
+    A400: #a9a7ff,
+    A700: #908eff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+$md-custom-accent: (
+    50: #e4e5e7,
+    100: #bcbfc4,
+    200: #90949d,
+    300: #636976,
+    400: #414958,
+    500: #20293b,
+    600: #1c2435,
+    700: #181f2d,
+    800: #131926,
+    900: #0b0f19,
+    A100: #5b7fff,
+    A200: #2858ff,
+    A400: #0036f4,
+    A700: #0031da,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$md-custom-warm: (
+    50: #f9e4e4,
+    100: #f1bdbc,
+    200: #e8918f,
+    300: #df6462,
+    400: #d84340,
+    500: #d1221e,
+    600: #cc1e1a,
+    700: #c61916,
+    800: #c01412,
+    900: #b50c0a,
+    A100: #ffe1e0,
+    A200: #ffaead,
+    A400: #ff7b7a,
+    A700: #ff6261,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$md-custom-bg-container: (
+    50: #fdfefe,
+    100: #fbfcfd,
+    200: #f8fafc,
+    300: #f5f8fb,
+    400: #f3f7fa,
+    500: #f1f5f9,
+    600: #eff4f8,
+    700: #edf2f7,
+    800: #ebf0f6,
+    900: #e7eef5,
+    A100: #ffffff,
+    A200: #ffffff,
+    A400: #ffffff,
+    A700: #ffffff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+// colors
+$my-app-primary: mat.define-palette($md-custom-primary);
+$my-app-accent:  mat.define-palette($md-custom-accent);
+$my-app-warm:  mat.define-palette($md-custom-warm);
+
+// backgrounds
+$my-app-bg-container:  mat.define-palette($md-custom-bg-container);
+
+
+
+

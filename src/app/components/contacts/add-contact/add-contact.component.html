@@ -1,0 +1,45 @@
+<app-profile-banner [bannerImage]="bannerImage"></app-profile-banner>
+
+<!-- navigation -->
+<div class="pr-nav">
+  <div class="pr-nav-inside p-relative pt-15 pb-15 pl-40 pr-40">
+    <div class="pr-avatar avatar-xl bg-image align-c float-l p-relative"
+      [style.background-image]="'url('+ selectedAvatar +')'">
+      <div class="image-edit z-index-10 pt-35 pb-35" *ngIf="formAction == 'edit'">
+        <input type="file" accept="image/*" #imgFileInput hidden (change)="selectFile($event)"/>
+        <button mat-icon-button (click)="imgFileInput.click()">
+          <mat-icon class="material-icons-outlined text-white">photo_camera</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon class="material-icons-outlined text-white">delete</mat-icon>
+        </button>
+      </div>
+      <span class="avatar-letter" *ngIf="!selectedAvatar">N</span>
+    </div>
+
+    <button mat-stroked-button class="float-r mr-20" (click)="editForm('edit')">
+      <mat-icon class="text-light">edit_square</mat-icon> Edit
+    </button>
+  </div>
+
+  <div class="br-container pt-10" *ngIf="formAction == 'preview'">
+    <h2 class="pb-20 border-b">{{selectedContact && selectedContact.fullName ? selectedContact.fullName : 'New Contact'}}</h2>
+
+    <div *ngIf="selectedContact && selectedContact.fullName">
+      <p><mat-icon>business_center</mat-icon> {{selectedContact.title}}</p>
+      <p *ngIf="selectedContact.company"><mat-icon>apartment</mat-icon> {{selectedContact.company}}</p>
+      <p *ngIf="selectedContact.email"><mat-icon>email</mat-icon> {{selectedContact.email}}</p>
+    </div>
+
+  </div>
+
+  <div class="pt10 pl-0 pr-0" *ngIf="formAction == 'edit'">
+    <!-- edit form -->
+    <app-contact-form
+      (cancel)="editForm('preview')"
+      (contact)="saveContact($event)"
+      [selectedContact]="selectedContact">
+    </app-contact-form>
+  </div>
+
+</div>

@@ -1,0 +1,54 @@
+<mat-drawer-container fullscreen>
+  <mat-drawer #drawer class="co-sidenav" [mode]="sidenavMode" position="end">
+    <button class="p-absolute t-10 r-15 z-index-10" mat-icon-button (click)="drawer.close()">
+      <mat-icon>close</mat-icon>
+    </button>
+
+    <!-- banner -->
+    <app-add-contact
+      [formAction]="formAction"
+      [selectedContact]="selectedContact"
+      (_formAction)="setFormAction($event)"
+      (contact)="updateContactList($event)">
+    </app-add-contact>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <div class="br-toolbar-white bottom-shadow">
+      <h1 class="m-0">Contacts</h1>
+      <p class="text-light mt-5">{{contactListSorted.length + 1}} contacts</p>
+
+      <div class="d-flex">
+        <mat-form-field appearance="outline" class="w-100 round-input mr-15">
+          <mat-icon matPrefix>search</mat-icon>
+          <input matInput type="text" placeholder="Search contacts">
+        </mat-form-field>
+
+        <button class="add-btn" mat-raised-button color="primary" (click)="drawer.open(); addNewContact()">
+          <mat-icon>add</mat-icon> Add
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <div *ngFor="let records of contactListSorted">
+        <div>
+          <p class="br-track-light pt-5 pb-5 pl-30 m-0">{{records?.alphabet}}</p>
+
+          <div *ngFor="let contact of records?.record; let i = index" (click)="drawer.open(); onSelectContact(contact)"
+            [ngClass]="{ 'border-b' : i < records?.record.length - 1 }"
+            class="contact-entry pointer d-flex pl-30 pr-30 pt-10 pb-10">
+            <div class="avatar-sm bg-image mr-20" [style.background-image]="'url('+ contact.avatar +')'">
+              <span class="avatar-letter-sm">{{contact.avatar ? '' : contact.fullName ? contact.fullName[0] : ''}}</span>
+            </div>
+            <div>
+              <p class="m-0">{{ contact?.fullName }}</p>
+              <p class="m-0 text-light">{{ contact?.title}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</mat-drawer-container>

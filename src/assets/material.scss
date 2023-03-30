@@ -1,0 +1,134 @@
+@font-face { font-family: Poppins; src: url('./../assets/fonts/Poppins/Poppins-Regular.ttf'); }
+@font-face { font-family: Poppins-bold; src: url('./../assets/fonts/Poppins/Poppins-Bold.ttf'); }
+@font-face { font-family: Poppins-extra-bold; src: url('./../assets/fonts/Poppins/Poppins-ExtraBold.ttf'); }
+@font-face { font-family: Poppins-light; src: url('./../assets/fonts/Poppins/Poppins-Light.ttf'); }
+
+mat-sidenav-container, mat-drawer-container {
+  height: 100vh;
+}
+
+button {
+  box-shadow: none !important;
+  letter-spacing: 0 !important;
+}
+
+label {
+  display: block;
+  color: #20293b;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.mdc-button {
+  border-radius: 25px !important;
+}
+
+mat-card {
+  border-radius: 15px !important;
+  overflow: hidden;
+  box-shadow: 0px 1px 0px -1px rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.10) !important;
+}
+
+.card-img {
+  height: 200px;
+  width: 100%;
+}
+
+mat-card-content {
+  padding: 0 30px !important;
+}
+
+mat-card-actions {
+  padding: 0 20px !important;
+}
+
+mat-form-field {
+  mat-icon {
+    color: #96a3b8;
+    font-size: 20px !important;
+  }
+}
+
+.mat-mdc-form-field-infix {
+  min-height: 50px !important;
+}
+
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+.mdc-notched-outline__leading {
+  border-top: 1px solid #ccd2db !important;
+  border-left: 1px solid #ccd2db !important;
+  border-bottom: 1px solid #ccd2db !important;
+}
+
+.mdc-notched-outline__trailing {
+  border-top: 1px solid #ccd2db !important;
+  border-bottom: 1px solid #ccd2db !important;
+  border-right: 1px solid #ccd2db !important;
+}
+
+.mdc-notched-outline--notched {
+  .mdc-notched-outline__leading {
+    border-top: 1px solid #7c78eb !important;
+    border-left: 1px solid #7c78eb !important;
+    border-bottom: 1px solid #7c78eb !important;
+  }
+
+  .mdc-notched-outline__trailing {
+    border-top: 1px solid #7c78eb !important;
+    border-bottom: 1px solid #7c78eb !important;
+    border-right: 1px solid #7c78eb !important;
+  }
+}
+
+textarea {
+  border: 1px solid #ccd2db;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: Poppins;
+}
+
+.no-resize {
+  resize: none !important;
+}
+
+.round-input .mdc-notched-outline__trailing {
+  border-top-right-radius: 25px !important;
+  border-bottom-right-radius: 25px !important;
+  border-top-left-radius: 25px !important;
+  border-bottom-left-radius: 25px !important;
+  border-left: 1px solid #ccd2db !important;
+}
+
+.round-input .mdc-notched-outline--notched .mdc-notched-outline__trailing {
+  border-left: 1px solid #7c78eb !important;
+}
+
+.round-input .mdc-notched-outline__leading {
+  max-width: 0 !important;
+  border-left: none !important;
+}
+
+.round-input .mdc-notched-outline {
+  height: 40px !important;
+}
+
+.round-input .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+.round-input input {
+  font-size: 14px !important;
+}
+
+.round-input .mat-mdc-form-field-flex {
+  height: 45px !important;
+}
+
+.round-input .mat-mdc-form-field-subscript-wrapper {
+  display: none !important;
+}

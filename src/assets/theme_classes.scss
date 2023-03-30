@@ -1,0 +1,164 @@
+@font-face { font-family: Poppins; src: url('./../assets/fonts/Poppins/Poppins-Regular.ttf'); }
+@font-face { font-family: Poppins-bold; src: url('./../assets/fonts/Poppins/Poppins-Bold.ttf'); }
+@font-face { font-family: Poppins-extra-bold; src: url('./../assets/fonts/Poppins/Poppins-ExtraBold.ttf'); }
+@font-face { font-family: Poppins-light; src: url('./../assets/fonts/Poppins/Poppins-Light.ttf'); }
+
+// Layout
+.br-container-light {
+  padding: 2rem;
+  background-color: #f1f5f9;
+  min-height: 100%;
+}
+
+.br-track-light {
+  background-color: #f8fafc;
+  border-top: 1px solid #dde3ea;
+  border-bottom: 1px solid #dde3ea;
+  padding: 1rem;
+}
+
+.br-container {
+  padding: 2rem;
+  height: 100%;
+}
+
+.br-form, .br-panel {
+  background-color: white;
+  padding: 2rem 2rem 1.5rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.br-toolbar-white {
+  padding: 2rem!important;
+  background-color: white;
+
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: Poppins-bold;
+  margin-top: 0 !important;
+  color: #1e293b;
+}
+
+.br-dark-blue-bg {
+  h1, h2, h3, h4, h5, h6, p, span {
+    color: white;
+  }
+}
+
+p {
+  font-size: 14px;
+  color: #1e293b;
+
+  mat-icon {
+    color: #64748b;
+    margin-bottom: -7px;
+    margin-right: 5px;
+  }
+}
+
+.title {
+  font-family: Poppins !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  margin-top: 0;
+}
+
+.bottom-shadow {
+  box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.30) !important;
+}
+
+.bold {
+  font-family: Poppins-bold !important;
+}
+
+::-webkit-input-placeholder {
+  color: #94a3b8 !important;
+  font-size: 14px;
+}
+
+:-ms-input-placeholder {
+  color: #94a3b8 !important;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: #94a3b8;
+  font-size: 14px !important;
+}
+
+.mat-mdc-select-placeholder {
+  color: #94a3b8;
+  font-size: 14px !important;
+}
+
+.mat-mdc-select-value-text {
+  font-size: 14px !important;
+}
+
+.mat-mdc-option {
+  font-size: 14px !important;
+}
+
+hr {
+  margin-top: 1.5rem!important;
+  margin-bottom: 1.5rem!important;
+  border: 1px solid #e8ecf4 !important;
+}
+
+.border-b {
+  border-bottom: 1px solid #e8ecf4 !important;
+}
+
+.image-edit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.473);
+  border-radius: 50%;
+  text-align: center;
+}
+
+
+// Colors & Background colors
+.br-icon-fill {
+  color: #66748b !important;
+}
+
+.br-dark-blue-bg {
+  background-color: #10172a !important;
+}
+
+.br-primary-bg {
+  background-color: #514be5 !important;
+}
+
+.br-accent-bg {
+  background-color: #20293b !important;
+}
+
+.br-warm-bg {
+  background-color: #d1221e !important;
+}
+
+.text-purple {
+  color: #848ef8 !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.text-light {
+  color: #64748b !important;
+}
+
+.bg-image {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}

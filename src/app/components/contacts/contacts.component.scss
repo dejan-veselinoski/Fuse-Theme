@@ -1,0 +1,22 @@
+.co-sidenav {
+  width: 50%;
+}
+
+mat-drawer-container {
+  margin-top: 65px;
+  height: calc(100% - 65px) !important;
+}
+
+.add-btn {
+  min-width: 80px;
+}
+
+.contact-entry:hover {
+  background-color: #f1f5f9;
+}
+
+@media (max-width: 992px) {
+  .co-sidenav {
+    width: 90%;
+  }
+}

@@ -1,0 +1,31 @@
+<form class="br-container" [formGroup]="contactForm">
+  <label>Name*</label>
+  <mat-form-field appearance="outline" class="w-100">
+    <input matInput type="text" formControlName="name" required>
+    <mat-icon matPrefix>account_circle</mat-icon>
+  </mat-form-field>
+
+  <label>Title*</label>
+  <mat-form-field appearance="outline" class="w-100">
+    <input matInput type="text" formControlName="title" required>
+    <mat-icon matPrefix>business_center</mat-icon>
+  </mat-form-field>
+
+  <label>Company</label>
+  <mat-form-field appearance="outline" class="w-100">
+    <input matInput type="text" formControlName="company">
+    <mat-icon matPrefix>apartment</mat-icon>
+  </mat-form-field>
+
+  <label>Email</label>
+  <mat-form-field appearance="outline" class="w-100">
+    <input matInput type="text" formControlName="email">
+    <mat-icon matPrefix>email</mat-icon>
+  </mat-form-field>
+</form>
+
+<div class="br-track-light overflow-h">
+  <button mat-button color="warn" class="float-l">Delete</button>
+  <button mat-raised-button color="primary"class="float-r" [disabled]="contactForm.invalid" (click)="onSave()">Save</button>
+  <button mat-button class="float-r mr-15" (click)="onCancel()">Cancel</button>
+</div>

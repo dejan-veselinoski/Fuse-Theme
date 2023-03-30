@@ -1,0 +1,35 @@
+@use '@angular/material' as mat;
+@include mat.core();
+@import './assets/color.scss';
+@import './assets/theme_classes.scss';
+@import './assets/shortcuts.scss';
+@import './assets/material.scss';
+
+$custom-typography: mat.define-typography-config(
+  $font-family: Poppins,
+);
+
+$my-app-theme: mat.define-light-theme((
+  color: (
+    primary: $my-app-primary,
+    accent: $my-app-accent,
+    warm: $my-app-warm,
+  ),
+  typography: $custom-typography,
+));
+
+@include mat.all-component-themes($my-app-theme);
+
+
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: Poppins; // Remove mat-typography from index.html
+  letter-spacing: 0px;
+  line-height: 22px;
+  color: #1e293b !important;
+}
+
+* {
+  box-sizing: border-box;
+}

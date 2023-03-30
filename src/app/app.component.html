@@ -1,0 +1,58 @@
+<mat-drawer-container fullscreen>
+  <mat-drawer #drawer class="br-sidenav pl-10 pt-10 pb-10 br-dark-blue-bg" mode="side" opened="true">
+    <!-- sidenav content -->
+      <div class="align-c mb-25 p-25">
+        <img class="avatar-lg bg-image" src="https://angular-material.fusetheme.com/assets/images/avatars/brian-hughes.jpg">
+        <p class="mb-0">Brian Hughes</p>
+        <span class="fs-12 o-06">hughes.brian@company.com</span>
+      </div>
+
+      <p class="text-purple ml-20 mr-10 mb-0 fs-14">COMPONENTS</p>
+      <p class="fs-12 o-06 ml-20 mr-10 mt-0">Brosurance designs</p>
+
+      <div class="sidenav-menu-item mb-5" [routerLink]="'/buttons'" [routerLinkActive]="['is-active']">
+        <div class="sidenav-menu-option">
+          <mat-icon class="material-icons-outlined">smart_button</mat-icon>
+          <span class="fs-14">Buttons</span>
+        </div>
+      </div>
+
+      <div class="sidenav-menu-item mb-5">
+        <app-main-sidenav-accordion></app-main-sidenav-accordion>
+      </div>
+
+      <div class="sidenav-menu-item mb-5" [routerLink]="'/profile'" [routerLinkActive]="['is-active']">
+        <div class="sidenav-menu-option">
+          <mat-icon class="material-icons-outlined">account_box</mat-icon>
+          <span class="fs-14">Profile</span>
+        </div>
+      </div>
+
+      <div class="sidenav-menu-item mb-5" [routerLink]="'/card'" [routerLinkActive]="['is-active']">
+        <div class="sidenav-menu-option">
+          <mat-icon class="material-icons-outlined">badge</mat-icon>
+          <span class="fs-14">Card</span>
+        </div>
+      </div>
+
+      <div class="sidenav-menu-item mb-5" [routerLink]="'/contacts'" [routerLinkActive]="['is-active']">
+        <div class="sidenav-menu-option">
+          <mat-icon class="material-icons-outlined">groups</mat-icon>
+          <span class="fs-14">Contacts</span>
+        </div>
+      </div>
+
+    <!-- end sidenav content -->
+  </mat-drawer>
+
+  <mat-toolbar>
+    <button mat-icon-button (click)="drawer.toggle()">
+      <mat-icon class="br-icon-fill pointer">menu</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <div class="sidenav-content">
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-drawer-container>

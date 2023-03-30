@@ -1,0 +1,20 @@
+
+<mat-accordion>
+  <mat-expansion-panel [expanded]="panelOpenState">
+    <mat-expansion-panel-header (click)="accordionOpened()">
+      <mat-panel-title>
+        <mat-icon class="material-icons-outlined">edit_square</mat-icon> Forms
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="sidenav-menu-item mt-5" [routerLink]="'./forms/input'" [routerLinkActive]="['is-active']">
+      <div class="sidenav-menu-option">
+        <span class="fs-14">Input</span>
+      </div>
+    </div>
+    <div class="sidenav-menu-item mt-5" [routerLink]="'./forms/select'" [routerLinkActive]="['is-active']">
+      <div class="sidenav-menu-option">
+        <span class="fs-14">Select</span>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

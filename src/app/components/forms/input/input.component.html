@@ -1,0 +1,63 @@
+<div class="br-toolbar-white">
+  <h1 class="m-0">Fields</h1>
+</div>
+
+<div class="br-container-light">
+
+  <p class="title">Appearance</p>
+  <p>Here's a very simple form layout to showcase the form fields.</p>
+
+  <!-- plain input -->
+  <form class="br-form mt-20" [style.width.%]="70">
+
+      <label>Full Name</label>
+      <mat-form-field appearance="outline" class="w-100">
+        <input matInput type="text">
+        <mat-icon matSuffix>account_circle</mat-icon>
+      </mat-form-field>
+
+      <label>Phone</label>
+      <mat-form-field appearance="outline" class="w-100">
+        <input matInput type="number">
+        <mat-icon matSuffix>call</mat-icon>
+      </mat-form-field>
+
+      <label>Email</label>
+      <mat-form-field appearance="outline" class="w-100">
+        <input matInput type="email">
+        <mat-icon matSuffix>mail</mat-icon>
+      </mat-form-field>
+
+      <label>Password</label>
+      <mat-form-field appearance="outline" class="w-100">
+        <input matInput type="password">
+        <mat-icon matSuffix>key</mat-icon>
+      </mat-form-field>
+
+  </form>
+
+  <h3 class="mt-50">Labels and Placeholders</h3>
+  <p>Following form contains examples to showcase different label and placeholder styles.</p>
+
+  <!-- placeholders -->
+  <form class="br-form mt-20" [style.width.%]="70">
+
+    <mat-form-field appearance="outline" class="w-100">
+      <input matInput type="text" placeholder="Placehoder only">
+    </mat-form-field>
+
+    <label>Label</label>
+    <mat-form-field appearance="outline" class="w-100">
+      <input matInput type="text">
+    </mat-form-field>
+
+    <label>Label and Placeholder</label>
+    <mat-form-field appearance="outline" class="w-100">
+      <input matInput type="text" placeholder="" onfocus="this.placeholder = 'Placeholder'">
+    </mat-form-field>
+
+  </form>
+
+</div>
+
+
