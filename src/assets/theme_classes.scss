@@ -1,19 +1,33 @@
-@font-face { font-family: Poppins; src: url('./../assets/fonts/Poppins/Poppins-Regular.ttf'); }
-@font-face { font-family: Poppins-bold; src: url('./../assets/fonts/Poppins/Poppins-Bold.ttf'); }
-@font-face { font-family: Poppins-extra-bold; src: url('./../assets/fonts/Poppins/Poppins-ExtraBold.ttf'); }
-@font-face { font-family: Poppins-light; src: url('./../assets/fonts/Poppins/Poppins-Light.ttf'); }
+@import './color.scss';
+
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: Poppins-bold;
+  src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: Poppins-extra-bold;
+  src: url('../fonts/Poppins/Poppins-ExtraBold.ttf');
+}
+@font-face {
+  font-family: Poppins-light;
+  src: url('../fonts/Poppins/Poppins-Light.ttf');
+}
 
 // Layout
 .br-container-light {
   padding: 2rem;
-  background-color: #f1f5f9;
+  background-color: $gray-light-1;
   min-height: 100%;
 }
 
 .br-track-light {
-  background-color: #f8fafc;
-  border-top: 1px solid #dde3ea;
-  border-bottom: 1px solid #dde3ea;
+  background-color: $gray-light-2;
+  border-top: 1px solid $gray-light-3;
+  border-bottom: 1px solid $gray-light-3;
   padding: 1rem;
 }
 
@@ -22,38 +36,50 @@
   height: 100%;
 }
 
-.br-form, .br-panel {
-  background-color: white;
+.br-form,
+.br-panel {
+  background-color: $white;
   padding: 2rem 2rem 1.5rem 2rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
 }
 
 .br-toolbar-white {
-  padding: 2rem!important;
-  background-color: white;
-
+  padding: 2rem !important;
+  background-color: $white;
 }
 
 // Typography
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Poppins-bold;
   margin-top: 0 !important;
-  color: #1e293b;
+  color: $solid-blue-2;
 }
 
-.br-dark-blue-bg {
-  h1, h2, h3, h4, h5, h6, p, span {
-    color: white;
+.dark-blue-bg {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span {
+    color: $white;
   }
 }
 
 p {
   font-size: 14px;
-  color: #1e293b;
+  color: $solid-blue-2;
 
   mat-icon {
-    color: #64748b;
+    color: blue-light;
     margin-bottom: -7px;
     margin-right: 5px;
   }
@@ -67,7 +93,7 @@ p {
 }
 
 .bottom-shadow {
-  box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.30) !important;
+  box-shadow: 0px 3px 3px -3px $dark-transparent-2 !important;
 }
 
 .bold {
@@ -75,22 +101,22 @@ p {
 }
 
 ::-webkit-input-placeholder {
-  color: #94a3b8 !important;
+  color: $gray !important;
   font-size: 14px;
 }
 
 :-ms-input-placeholder {
-  color: #94a3b8 !important;
+  color: $gray !important;
   font-size: 14px;
 }
 
 ::placeholder {
-  color: #94a3b8;
+  color: $gray;
   font-size: 14px !important;
 }
 
 .mat-mdc-select-placeholder {
-  color: #94a3b8;
+  color: $gray;
   font-size: 14px !important;
 }
 
@@ -103,13 +129,13 @@ p {
 }
 
 hr {
-  margin-top: 1.5rem!important;
-  margin-bottom: 1.5rem!important;
-  border: 1px solid #e8ecf4 !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  border: 1px solid $gray-light !important;
 }
 
 .border-b {
-  border-bottom: 1px solid #e8ecf4 !important;
+  border-bottom: 1px solid $gray-light !important;
 }
 
 .image-edit {
@@ -118,47 +144,62 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.473);
+  background-color: $dark-transparent-1;
   border-radius: 50%;
   text-align: center;
 }
 
-
 // Colors & Background colors
-.br-icon-fill {
-  color: #66748b !important;
+.icon-filled {
+  color: $blue-light;
 }
 
-.br-dark-blue-bg {
-  background-color: #10172a !important;
+.dark-blue-bg {
+  background-color: $dark-blue !important;
 }
 
-.br-primary-bg {
-  background-color: #514be5 !important;
+.primary-bg {
+  background-color: $primary !important;
 }
 
-.br-accent-bg {
-  background-color: #20293b !important;
+.accent-bg {
+  background-color: $accent;
 }
 
-.br-warm-bg {
-  background-color: #d1221e !important;
+.warm-bg {
+  background-color: $warm;
 }
 
 .text-purple {
-  color: #848ef8 !important;
+  color: $purple !important;
 }
 
 .text-white {
-  color: white !important;
+  color: $white;
 }
 
 .text-light {
-  color: #64748b !important;
+  color: $blue-light !important;
 }
 
 .bg-image {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+}
+
+.br-sidenav ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: $dark-transparent;
+}
+
+.br-sidenav ::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: $solid-blue;
+}
+
+.br-sidenav ::-webkit-scrollbar-thumb:hover {
+  background-color: $solid-blue-1;
+  width: 12px;
 }

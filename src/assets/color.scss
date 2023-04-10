@@ -134,6 +134,28 @@ $my-app-primary: mat.define-palette($md-custom-primary);
 $my-app-accent:  mat.define-palette($md-custom-accent);
 $my-app-warm:  mat.define-palette($md-custom-warm);
 
+$blue-light: #66748b;
+$dark-blue: #10172a;
+$solid-blue: #2b334b;
+$solid-blue-1: #3a435e;
+$solid-blue-2: #1e293b;
+$primary: #514be5;
+$accent: #20293b;
+$warm: #d1221e;
+$purple: #848ef8;
+$white: #ffffff;
+$gray: #94a3b8;
+$gray-light: #e8ecf4;
+$gray-light-1: #f1f5f9;
+$gray-light-2: #f8fafc;
+$gray-light-3: #dde3ea;
+$gray-light-4: #ccd2db;
+$solid-gray: #96a3b8;
+$black: #000000;
+$dark-transparent: #0000;
+$dark-transparent-1: rgba(0, 0, 0, 0.473);
+$dark-transparent-2: rgba(0, 0, 0, 0.473);
+
 // backgrounds
 $my-app-bg-container:  mat.define-palette($md-custom-bg-container);
 

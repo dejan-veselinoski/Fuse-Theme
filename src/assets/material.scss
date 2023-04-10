@@ -1,9 +1,24 @@
-@font-face { font-family: Poppins; src: url('./../assets/fonts/Poppins/Poppins-Regular.ttf'); }
-@font-face { font-family: Poppins-bold; src: url('./../assets/fonts/Poppins/Poppins-Bold.ttf'); }
-@font-face { font-family: Poppins-extra-bold; src: url('./../assets/fonts/Poppins/Poppins-ExtraBold.ttf'); }
-@font-face { font-family: Poppins-light; src: url('./../assets/fonts/Poppins/Poppins-Light.ttf'); }
+@import './color.scss';
 
-mat-sidenav-container, mat-drawer-container {
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: Poppins-bold;
+  src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: Poppins-extra-bold;
+  src: url('../fonts/Poppins/Poppins-ExtraBold.ttf');
+}
+@font-face {
+  font-family: Poppins-light;
+  src: url('../fonts/Poppins/Poppins-Light.ttf');
+}
+
+mat-sidenav-container,
+mat-drawer-container {
   height: 100vh;
 }
 
@@ -14,7 +29,7 @@ button {
 
 label {
   display: block;
-  color: #20293b;
+  color: $accent;
   font-size: 15px;
   margin-bottom: 5px;
 }
@@ -26,7 +41,8 @@ label {
 mat-card {
   border-radius: 15px !important;
   overflow: hidden;
-  box-shadow: 0px 1px 0px -1px rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.10) !important;
+  box-shadow: 0px 1px 0px -1px rgba(0, 0, 0, 0.2),
+    0px 0px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.1) !important;
 }
 
 .card-img {
@@ -44,7 +60,7 @@ mat-card-actions {
 
 mat-form-field {
   mat-icon {
-    color: #96a3b8;
+    color: $solid-gray;
     font-size: 20px !important;
   }
 }
@@ -59,33 +75,33 @@ mat-form-field {
 }
 
 .mdc-notched-outline__leading {
-  border-top: 1px solid #ccd2db !important;
-  border-left: 1px solid #ccd2db !important;
-  border-bottom: 1px solid #ccd2db !important;
+  border-top: 1px solid $gray-light-4 !important;
+  border-left: 1px solid $gray-light-4 !important;
+  border-bottom: 1px solid $gray-light-4 !important;
 }
 
 .mdc-notched-outline__trailing {
-  border-top: 1px solid #ccd2db !important;
-  border-bottom: 1px solid #ccd2db !important;
-  border-right: 1px solid #ccd2db !important;
+  border-top: 1px solid $gray-light-4 !important;
+  border-bottom: 1px solid $gray-light-4 !important;
+  border-right: 1px solid $gray-light-4 !important;
 }
 
 .mdc-notched-outline--notched {
   .mdc-notched-outline__leading {
-    border-top: 1px solid #7c78eb !important;
-    border-left: 1px solid #7c78eb !important;
-    border-bottom: 1px solid #7c78eb !important;
+    border-top: 1px solid $purple !important;
+    border-left: 1px solid $purple !important;
+    border-bottom: 1px solid $purple !important;
   }
 
   .mdc-notched-outline__trailing {
-    border-top: 1px solid #7c78eb !important;
-    border-bottom: 1px solid #7c78eb !important;
-    border-right: 1px solid #7c78eb !important;
+    border-top: 1px solid $purple !important;
+    border-bottom: 1px solid $purple !important;
+    border-right: 1px solid $purple !important;
   }
 }
 
 textarea {
-  border: 1px solid #ccd2db;
+  border: 1px solid $gray-light-4;
   border-radius: 5px;
   padding: 15px;
   font-family: Poppins;
@@ -100,11 +116,11 @@ textarea {
   border-bottom-right-radius: 25px !important;
   border-top-left-radius: 25px !important;
   border-bottom-left-radius: 25px !important;
-  border-left: 1px solid #ccd2db !important;
+  border-left: 1px solid $gray-light-4 !important;
 }
 
 .round-input .mdc-notched-outline--notched .mdc-notched-outline__trailing {
-  border-left: 1px solid #7c78eb !important;
+  border-left: 1px solid $purple !important;
 }
 
 .round-input .mdc-notched-outline__leading {
@@ -116,7 +132,9 @@ textarea {
   height: 40px !important;
 }
 
-.round-input .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+.round-input
+  .mat-mdc-text-field-wrapper.mdc-text-field--outlined
+  .mat-mdc-form-field-infix {
   padding-top: 7px !important;
   padding-bottom: 7px !important;
 }
@@ -131,4 +149,9 @@ textarea {
 
 .round-input .mat-mdc-form-field-subscript-wrapper {
   display: none !important;
+}
+
+.mat-toolbar {
+  box-shadow: 1px -2px 4px 0px rgba(0,0,0,0.75) !important;
+  background-color: $white !important;
 }
